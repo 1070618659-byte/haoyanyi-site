@@ -120,7 +120,7 @@ export default function Home() {
               好安颐 AI 智慧健康与安全守护系统
             </h1>
             <p className="hero-fade-up-delay-2 mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              以心电智能感知为入口，连接老人、子女与机构，提供健康监测、风险预警、远程守护与安全支持的一体化解决方案。
+              以<span className="text-xl font-black text-white">心狗智慧健康产品</span>心电智能感知为入口，连接老人、子女与机构，提供健康监测、风险预警、远程守护与安全支持的一体化解决方案。
             </p>
             <div className="hero-fade-up-delay-3 mt-8 flex flex-col gap-3 sm:flex-row">
               <a href="#solutions" className="rounded-full bg-white px-6 py-3 text-center text-sm font-bold text-[#102A43] transition-all duration-300 hover:bg-slate-100 hover:scale-105 hover:shadow-lg">
@@ -150,6 +150,9 @@ export default function Home() {
       </section>
 
       <section className="bg-[#0B1F4D] px-4 pt-6 pb-8 text-white sm:px-6 lg:px-8 -mt-4 relative z-10">
+        <p className="mx-auto max-w-7xl text-sm text-white/80 mb-5">
+          搭载的国际首个心电大模型<span className="text-base font-black text-white">心狗智慧健康系统</span>拥有：
+        </p>
         <div className="mx-auto grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {stats.map(([num, label]) => (
             <div key={label} className="text-center lg:text-left">
@@ -158,7 +161,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="mx-auto mt-5 max-w-7xl text-xs text-slate-400">数据来源于项目资料与合作技术方公开/授权材料，最终产品能力以正式版本为准。</p>
       </section>
 
       <section className="bg-[#0B1F4D] px-0 pb-8 sm:pb-0">
@@ -173,8 +175,7 @@ export default function Home() {
             className="reveal h-auto w-full object-cover"
           />
           <div className="absolute inset-x-0 top-0 px-0 pt-0">
-            <div className="mx-auto w-full max-w-4xl rounded-b-2xl bg-[#0B1F4D]/50 p-6 text-center text-white backdrop-blur-lg shadow-lg sm:p-8"
-              style={{ WebkitBackdropFilter: "blur(20px)" }}>
+            <div className="mx-auto w-full max-w-4xl rounded-b-2xl bg-[#0B1F4D]/50 p-6 text-center text-white shadow-lg sm:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#26C6B8]">Product System</p>
               <h2 className="mt-3 text-2xl font-black leading-snug sm:text-3xl">
                 让心电健康管理，从医院走向家庭与机构
